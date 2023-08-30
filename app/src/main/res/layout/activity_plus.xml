@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Plus"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/postText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:text="exprimez vous..." />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/pickPhoto"
+            android:layout_width="371dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="165dp"
+            android:layout_marginEnd="20dp"
+            android:onClick="pickPhoto"
+            android:background="?selectableItemBackground"
+            android:hint="        Ajouter une photo"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_marginTop="147dp"
+            android:layout_width="30dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/gallery_image" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_post"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:text="Post"
+            android:textAllCaps="false"
+            android:layout_marginTop="220dp"
+            android:background="@drawable/round_back_primary_15"
+            android:textColor="@color/white"/>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/pickedImage"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp" />
+
+
+</LinearLayout>
